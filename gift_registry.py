@@ -1,3 +1,10 @@
+# CSCI 1511 - Project 1
+# Gift Registry
+# This program allows the user to create and manage a gift registry.
+# The user can add gifts, view the registry, mark gifts as purchased,
+# remove gifts, and exit the program.
+
+
 gifts = []
 
 print("Welcome to the Gift Registry!")
