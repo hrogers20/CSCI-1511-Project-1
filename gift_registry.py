@@ -1,9 +1,9 @@
-# CSCI 1511 - Project 1
-# Gift Registry
-# This program allows the user to create and manage a gift registry.
-# The user can add gifts, view the registry, mark gifts as purchased,
-# remove gifts, and exit the program.
-
+#Program: Gift Registry
+#Author: Hannah Rogers
+#Purpose: Allows users to create and manage a gift registry by adding,
+#viewing, marking, and removing gifts.
+#Resources: No starter code was used.
+#Date: September 26, 2026
 
 gifts = []
 
