@@ -25,26 +25,46 @@ while True:
         print(gift_name, "was added for $", gift_price)
 
     elif choice == "2":
-        for gift in gifts:
-            if gift["purchased"] == True:
-                print(gift["name"], "-", "$", gift["price"], "- Purchased")
-            else:
-                print(gift["name"], "-", "$", gift["price"], "- Not Purchased")
+        if len(gifts) == 0:
+            print("Your gift registry is empty.")
+        else:
+            for gift in gifts:
+                if gift["purchased"] == True:
+                    print(gift["name"], "-", "$", gift["price"], "- Purchased")
+                else:
+                    print(gift["name"], "-", "$", gift["price"], "- Not Purchased")
 
     elif choice == "3":
         gift_name = input("Enter the name of the gift that was purchased: ")
+        found = False
 
         for gift in gifts:
             if gift["name"] == gift_name:
                 gift["purchased"] = True
                 print(gift_name, "has been marked as purchased!")
+                found = True
                 break
 
+        if found == False:
+            print("Gift not found in the registry.")
+    
     elif choice == "4":
-        gift_name = input("Enter the name of the gift you'd like to remove: ")
+            gift_name = input("Enter the name of the gift you'd like to remove: ")
+            found = False
 
-        for gift in gifts:
-            if gift["name"] == gift_name:
-                gifts.remove(gift)
-                print(gift_name, "has been removed from the registry.")
-                break
+            for gift in gifts:
+                if gift["name"] == gift_name:
+                 gifts.remove(gift)
+                 print(gift_name, "has been removed from the registry.")
+                 found = True
+                 break
+
+            if found == False:
+                print("Gift not found in the registry.")
+    
+    elif choice == "5":
+        print("Thank you for using the Gift Registry!")
+        break
+
+    else:
+        print("Invalid choice. Please enter a number between 1 and 5.")
