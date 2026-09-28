@@ -1,6 +1,6 @@
 # Gift Registry
 
-**Video Presentation:** Add Later
+**Video Presentation:** (https://youtu.be/vF1fR6UDXWg)
 
 ## About the Project
 

@@ -1,9 +1,11 @@
-#Program: Gift Registry
-#Author: Hannah Rogers
-#Purpose: Allows users to create and manage a gift registry by adding,
-#viewing, marking, and removing gifts.
-#Resources: No starter code was used.
-#Date: September 26, 2026
+"""
+Program: Gift Registry
+Author: Hannah Rogers
+Purpose: Allows users to create and manage a gift registry by adding,
+viewing, marking, and removing gifts.
+Resources: No starter code was used.
+Date: September 26, 2026
+"""
 
 gifts = []
 
